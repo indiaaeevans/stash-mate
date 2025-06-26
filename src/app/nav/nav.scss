@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    flex-grow: .5;
+    text-align: center;
+}
+.nav-header {
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #da0eda;
+    text-decoration: none;
+    padding: 0 6px 0 12px;
+}

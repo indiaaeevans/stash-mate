@@ -1,6 +1,32 @@
 # StashMate
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+A web app to manage my sewing patterns and fabrics
+
+## Tech stack
+
+- client: angular app hosted on netlify
+- proxy server: aws api gateway + lambda function
+- backend: airtable
+
+## Todos
+
+- [x] proxy server
+- [x] filter patterns by type
+- [x] filter fabrics by type
+- [x] filter fabrics by color
+- [ ] icons for pattern types
+- [ ] categorize fabrics by thrifted vs new
+- [ ] app theme / color palette
+- [ ] enhance layout
+- [ ] add missing data
+- [ ] image optimizations
+
+## stretch goals
+- [ ] create svgs for all patterns
+- [ ] add pattern ratings
+- [ ] projects feature
+- [ ] more sophisticated matching via fabric weight
+- [ ] form to add new patterns / fabrics
 
 ## Development server
 
@@ -11,20 +37,6 @@ ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
 
 ## Building
 
@@ -51,8 +63,6 @@ For end-to-end (e2e) testing, run:
 ```bash
 ng e2e
 ```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 

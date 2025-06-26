@@ -1,0 +1,14 @@
+<a matButton routerLink="/fabrics">Back to all fabrics</a>
+@if (fabric) {
+<h1>Found {{patterns.length}} pattern options for {{fabric.fields.Description}} {{fabric.fields.Print}} {{fabric.fields.Contents}}</h1>
+} @else {
+<p>Fabric not found</p>
+}
+
+<ul class="pattern-list">
+  @for (pattern of patterns; track pattern.id) {
+  <li>
+    <app-pattern [pattern]="pattern"></app-pattern>
+  </li>
+  }
+</ul>

@@ -1,0 +1,8 @@
+<nav class="nav">
+    <a class="nav-header" routerLink="/">StashMate</a>
+    <mat-nav-list class="nav-list">
+        <a mat-list-item routerLink="/fabrics" routerLinkActive [routerLinkActiveOptions]="{exact: true}" #fabricsActive="routerLinkActive" [activated]="fabricsActive.isActive">Fabrics</a>
+        <a mat-list-item routerLink="/patterns" routerLinkActive [routerLinkActiveOptions]="{exact: true}" #patternsActive="routerLinkActive" [activated]="patternsActive.isActive">Patterns</a>
+        <a mat-list-item routerLink="/projects" routerLinkActive [routerLinkActiveOptions]="{exact: true}" #projectsActive="routerLinkActive" [activated]="projectsActive.isActive">Projects</a>
+    </mat-nav-list>
+</nav>

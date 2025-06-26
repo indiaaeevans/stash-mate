@@ -1,0 +1,15 @@
+<mat-card class="fabric-card" appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image {{fabric().fields['Main color']}}"></div>
+      <mat-card-title>{{fabric().fields.Description}} {{fabric().fields.Print}}</mat-card-title>
+      <mat-card-subtitle>{{fabric().fields.Contents}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{fabric().fields['Width (in)']}} in x {{fabric().fields.Yards}} yards
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+  <a matButton routerLink="/fabrics/{{fabric().id}}">Find patterns from my stash</a>
+    </mat-card-actions>
+  </mat-card>

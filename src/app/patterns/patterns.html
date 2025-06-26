@@ -1,0 +1,14 @@
+<mat-chip-listbox multiple (change)="onFilterChange($event)">
+  @for (type of types; track type) {
+  <mat-chip-option>{{type}}</mat-chip-option>
+  }
+</mat-chip-listbox>
+<ul class="pattern-list">
+@for (pattern of patterns; track pattern.id) {
+<li>
+  <app-pattern [pattern]="pattern"></app-pattern>
+</li>
+} @empty {
+<p>Loading...</p>
+}
+</ul>

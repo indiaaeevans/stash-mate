@@ -1,0 +1,33 @@
+<a matButton routerLink="/patterns">Back to all patterns</a>
+
+@if (pattern) {
+<div class="pattern-details-container">
+    <img class="pattern-img" [src]="pattern.fields['Line drawing']?.[0]?.url || 'https://placehold.co/600x400'" alt="Line drawing">
+  <div class="pattern-details">
+    <h1>{{pattern.fields.Name}}</h1>
+    <h3>Fabric requirements:</h3>
+        @if (pattern.fields.Yardage_narrow) {
+        <p>
+            {{pattern.fields.Yardage_narrow}} yards x 44"
+        </p>
+        }
+        @if (pattern.fields.Yardage_wide) {
+        <p>
+            {{pattern.fields.Yardage_wide}} yards x 55"
+        </p>
+        }
+    <h3>Supplies needed:</h3>
+    <p>{{pattern.fields.Supplies}}</p>
+  
+  </div>
+</div>
+<h2>Found {{fabrics.length}} fabric options</h2>
+
+  <div class="fabric-list">
+    @for (fabric of fabrics; track fabric.id) {
+    <app-fabric [fabric]="fabric"></app-fabric>
+    }
+  </div>
+} @else {
+<p>Loading...</p>
+}

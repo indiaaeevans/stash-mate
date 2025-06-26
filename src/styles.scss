@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+// Custom Theming for Angular Material
+// For more information: https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((color: mat.$green-palette,
+      typography: Poppins,
+      density: 0,
+    ));
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #E8F5E9;
+  margin: 0;
+  font-family: Poppins, "Helvetica Neue", sans-serif;
+}
+
+app-root {
+  display: block;
+  padding: 0 16px 48px;
+}
+
+.pattern-list,
+.fabric-list {
+  // remove default list styling
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.fabric-list .fabric-card,
+.pattern-list .pattern-card {
+  height: 100%;
+}
+
+.Green {
+  background-color: #4CAF50;
+}
+
+.Blue {
+  background-color: #2196F3;
+}
+
+.Red {
+  background-color: #F44336;
+}
+
+.Yellow {
+  background-color: #FFEB3B;
+}
+
+.Orange {
+  background-color: #FF9800;
+}
+
+.Purple {
+  background-color: #9C27B0;
+}
+
+.Brown {
+  background-color: #795548;
+}
+
+.Black {
+  background-color: #000000;
+}
+
+.White {
+  background-color: #ffffff;
+}
+
+.Grey {
+  background-color: #9E9E9E;
+}
+
+.Ivory {
+  background-color: #FFF3E0;
+}
+
+.Beige {
+  background-color: #D7CCC8;
+}
+
+.Teal {
+  background-color: #00BCD4;
+}
+
+.Pink {
+  background-color: #FF4081;
+}

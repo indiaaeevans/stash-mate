@@ -1,0 +1,26 @@
+<mat-card class="pattern-card" appearance="outlined">
+    <mat-card-header>
+        <!-- TODO icons for pattern types -->
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>{{pattern().fields.Name}}</mat-card-title>
+        <mat-card-subtitle>{{pattern().fields.Type}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="pattern().fields['Line drawing']?.[0]?.url || 'https://placehold.co/600x400'"
+        alt="Line drawing">
+    <mat-card-content>
+        Fabric requirements:
+        @if (pattern().fields.Yardage_narrow) {
+        <p>
+            {{pattern().fields.Yardage_narrow}} yards x 44"
+        </p>
+        }
+        @if (pattern().fields.Yardage_wide) {
+        <p>
+            {{pattern().fields.Yardage_wide}} yards x 55"
+        </p>
+        }
+    </mat-card-content>
+    <mat-card-actions>
+        <a matButton [routerLink]="['/patterns', pattern().id]">Find fabrics from my stash</a>
+    </mat-card-actions>
+</mat-card>

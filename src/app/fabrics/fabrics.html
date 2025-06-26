@@ -1,0 +1,15 @@
+<mat-chip-listbox (change)="onFilterChange($event)">
+  @for (type of types; track type) {
+  <mat-chip-option>{{type}}</mat-chip-option>
+  }
+</mat-chip-listbox>
+<ul class="fabric-list">
+    @for (fabric of fabrics; track fabric.id) {
+    <li>
+    <app-fabric [fabric]="fabric"></app-fabric>
+    </li>
+    } @empty {
+      <p>Loading...</p>
+
+    }
+    </ul>
