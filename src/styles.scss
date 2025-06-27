@@ -36,6 +36,10 @@ app-root {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+.filter-list {
+  margin-bottom: 16px;
+}
+
 .fabric-list .fabric-card,
 .pattern-list .pattern-card {
   height: 100%;

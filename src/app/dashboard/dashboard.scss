@@ -1,0 +1,32 @@
+.landing-icon {
+   margin: auto;
+   display: block;
+   max-width: 80%;
+}
+.landing-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-header {
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 10.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #da0eda;
+    text-decoration: none;
+    padding: 0 6px 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing-header-icon {
+    width: 10.5rem;
+    height: 10.5rem;
+    fill: currentColor;
+    margin-left: 0.5rem;
+}

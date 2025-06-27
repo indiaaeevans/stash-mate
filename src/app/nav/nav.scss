@@ -18,4 +18,13 @@
     color: #da0eda;
     text-decoration: none;
     padding: 0 6px 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-header-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: currentColor;
+    margin-left: 0.5rem;
 }

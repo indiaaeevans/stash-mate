@@ -14,6 +14,7 @@ A web app to manage my sewing patterns and fabrics
 - [x] filter patterns by type
 - [x] filter fabrics by type
 - [x] filter fabrics by color
+- [ ] favicon
 - [ ] icons for pattern types
 - [ ] categorize fabrics by thrifted vs new
 - [ ] app theme / color palette

@@ -1,4 +1,4 @@
-<mat-chip-listbox multiple (change)="onFilterChange($event)">
+<mat-chip-listbox multiple (change)="onFilterChange($event)" class="filter-list">
   @for (type of types; track type) {
   <mat-chip-option>{{type}}</mat-chip-option>
   }
